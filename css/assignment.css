@@ -19,17 +19,46 @@
   margin-bottom: 0; 
 }
 
-.button5 {
+.button-badge {
   border-radius: 50%;
 }
-.button5 img {
-  transition: 0.3s;
-  text-decoration: none;
-  border-radius: 0 5px 5px 0;
+ 
+.button-badge[data-badge]:after {
+  content:attr(data-badge);
+  position:absolute;
+  top:3px;
+  right:130px;
+  font-size:.5em;
+  background:black;
+  color:white;
+  width:18px;height:18px;
+  text-align:center;
+  line-height:18px;
+  border-radius:50%;
+  box-shadow:0 0 0px white;
 }
 
-.button5 img:hover {
-  right: 0; 
+.button4 {
+  border-radius: 50%;
+}
+
+.button3 {
+  border-radius: 50%;
+}
+
+.button3[data-badge]:after {
+  content:attr(data-badge);
+  position:absolute;
+  top:1px;
+  right:-2px;
+  font-size:.5em;
+  background:black;
+  color:white;
+  width:18px;height:18px;
+  text-align:center;
+  line-height:18px;
+  border-radius:50%;
+  box-shadow:0 0 0px white;
 }
 
 #back {
@@ -45,7 +74,7 @@
   text-decoration: none;
   font-size: 20px;
   color: white;
-  border-radius: 0 5px 5px 0;
+  border-radius: 0px 5px 5px 0px;
 }
 
 #back a:hover {
@@ -68,7 +97,7 @@
       text-decoration: none;
       font-size: 20px;
       color: white;
-      border-radius: 0 5px 5px 0;
+      border-radius: 5px 0px 0px 5px;
 }
 #rback a:hover {
       right: 0;
@@ -80,7 +109,7 @@
     
 
 .icon-bar {
-  width: 20px;
+  width: 50px;
   padding-left: 1px;
   /* background-color:#f9f9f9; */
 }
@@ -106,6 +135,7 @@
 
 body {
   padding-top: 56px;
+  background-color: rgb(168, 165, 167);
 }
 h4 {
   font-family: "Calibri";
@@ -131,9 +161,7 @@ a {
   text-align: center;
   font-size: 30px;
 }
-  /* .social {
-    padding-left: 0px;
-  } */
+ 
    li {
     display: inline-block;
     margin-left: 10px;
