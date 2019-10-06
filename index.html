@@ -20,37 +20,70 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-  
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <div class="container">
-      <h4 style="font-family: Georgia, 'Times New Roman', Times, serif;color:black">WhitePanda</h4>
+      <h4 style="font-family: 'raleway', 'Times New Roman', Times, serif;color:black;">white<b>panda</b></h4>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-                <i class="fa fa-bell-o" style="font-size:24px;margin-right:16px;"></i>
+                <i class="fa fa-bell-o" style="font-size:26px;margin-right:16px;"></i>
           </li>
           <li class="nav-item">
-                <i class="fa fa-user-circle-o" style="font-size:24px"></i>
+                <i class="fa fa-user-circle-o" style="font-size:26px"></i>
           </li>
         </ul>
       </div>
     </div>
+    </div>
+  </nav>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-bottom">
+      <div class="comments">
+          <ul class="container">
+              <button class="button button5" style="background-color: white;font-size:35px;" data-hover="Comments(8)" data-acive="">
+                  <i class="fa fa-fw fa-comments">
+                      <!-- <div class="overlay">
+                          <div class="text">Comments</div>
+                        </div> -->
+                  </i>
+              </button>
+              <button class="button button5" style="background-color: white;font-size:35px;">
+                  <i class="fa fa-fw fa-desktop ">
+                      <!-- <div class="overlay">
+                      <div class="text">Screens</div>
+                    </div> -->
+                  </i>
+              </button>
+              <button class="button button5" style="background-color: white;font-size:35px;">
+                  <i class="fa fa-fw fa-info-circle fa-xs">
+                      <!-- <div class="overlay">
+                      <div class="text">Inspect</div>
+                    </div> -->
+                  </i> 
+              </button>
+          </ul>
+        </div>
   </nav>
   <!-- Page Content -->
   
       <div class="icon-bar" style="font-size:50px;float:left">
           <a href="#dashboard"><i class="fa fa-fw fa-th fa-xs"></i></a>
-          <a class="active" href="#search"><i class="fa fa-fw fa-search fa-xs"></i></a>
-          <a href="#clients"><i class="fa fa-fw fa-shopping-cart fa-xs"></i></a>  
+          <a  href="#"><i class="fa fa-fw fa-search fa-xs"></i></a>
+          <a href="#"><i class="fa fa-fw fa-shopping-cart fa-xs"></i></a>  
+          <div id="back">
+              <a href="#" id="backb"><i class="fa fa-arrow-left"></i></a>
+          </div>
+          <div id="rback">
+              <a href="#" id="backr"><i class="fa fa-arrow-right"></i></a>
+          </div>
        </div>
 
         <div class="container" style="float: left;">
           <header class="jumbotron">
-          <h3>Content Store</h3><br>
+              <h3>Content Store</h3><br>
           <p style="color:rgb(32, 231, 188);font-size:120%;">Got bulk orders or similar orders? Fill the order bried in excel sheet </p>
           <p style="color:gray;font-size:120%;">If you're wondering about an easy way to place orders in large numbers, we provide a way customized for that. Download our excel sheet, and fill the order in brief in the prescribed format and submit. In case you need any help, <u>we are just a click away to assist you in placing your order.</u></p>
           <button class="w3-button w3-black" align:center style="color: rgb(32, 231, 188);background-color:white;border: 2px solid rgb(32, 231, 188);padding: 0px 10px">Order via Excel Sheet</button>
@@ -90,42 +123,42 @@
           </div>
 
           <div class="col-lg-4 col-md-6 mb-4">
-              <div class="card-body d-flex flex-row" style="padding: 80px;">
+              <div class="card-body" style="padding: 80px;">
                   <img src="images/random.jpg" class="rounded-circle mr-3" height="50px" width="50px" alt="avatar">
             <div class="card-body">
                 <h4 class="card-title"style="color: black">
                   Whitepaper
                 </h4>
                 <h5 class="card-subtitle mb-2 text-muted">from ₹2000</h5>
-                <p class="card-text">Typically 450-500 words, an e-book is perfect for your target audience ranging from prospective customers to users</p>
+                <p class="card-text mb-2">Typically 450-500 words, an e-book is perfect for your target audience ranging from prospective customers to users</p>
                 <button class="w3-button w3-black" align:center style="color: rgb(32, 231, 188);background-color:white;border: 2px solid rgb(32, 231, 188);padding: 0px 10px">Order</button>
               </div>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 mb-4">
-              <div class="card-body d-flex flex-row" style="padding: 80px;">
+              <div class="card-body" style="padding: 80px;">
                   <img src="images/random.jpg" class="rounded-circle mr-3" height="50px" width="50px" alt="avatar">
               <div class="card-body">
                 <h4 class="card-title"style="color: black">
                   e-book
                 </h4>
                 <h5 class="card-subtitle mb-2 text-muted">from ₹1000</h5>
-                <p class="card-text">Typically 450-500 words, an e-book is perfect for your target audience ranging from prospective customers to users</p>
+                <p class="card-text mb-2">Typically 450-500 words, an e-book is perfect for your target audience ranging from prospective customers to users</p>
                 <button class="w3-button w3-black" align:center style="color: rgb(32, 231, 188);background-color:white;border: 2px solid rgb(32, 231, 188);padding: 0px 10px">Order</button>
               </div>           
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 mb-4">
-              <div class="card-body d-flex flex-row" style="padding: 80px;">
+              <div class="card-body" style="padding: 80px;">
                   <img src="images/random.jpg" class="rounded-circle mr-3" height="50px" width="50px" alt="avatar">
               <div class="card-body">
                 <h4 class="card-title"style="color: black">
                 Report/Guide
                 </h4>
                 <h5 class="card-subtitle mb-2 text-muted">from ₹1000</h5>
-                <p class="card-text">Typically 450-500 words, an e-book is perfect for your target audience ranging from prospective customers to users</p>
+                <p class="card-text mb-2">Typically 450-500 words, an e-book is perfect for your target audience ranging from prospective customers to users</p>
                 <button class="w3-button w3-black" align:center style="color: rgb(32, 231, 188);background-color:white;border: 2px solid rgb(32, 231, 188);padding: 0px 10px">Order</button>
               </div>
               
@@ -133,11 +166,11 @@
           </div>
 
           <div class="col-lg-4 col-md-6 mb-4">
-              <div class="card-body d-flex flex-row" style="padding: 80px;">
+              <div class="card-body" style="padding: 80px;">
                   <img src="images/random.jpg" class="rounded-circle mr-3" height="50px" width="50px" alt="avatar">
               <div class="card-body">
                 <h4 class="card-title"style="color: black">
-                  Product Description
+                  Product
                 </h4>
                 <h5 class="card-subtitle mb-2 text-muted">from ₹500</h5>
                 <p class="card-text">Typically 450-500 words, an e-book is perfect for your target audience ranging from prospective customers to users</p>
@@ -147,14 +180,14 @@
             </div>
           </div>
           <div class="col-lg-4 col-md-6 mb-4">
-              <div class="card-body d-flex flex-row" style="padding: 80px;"> 
+              <div class="card-body" style="padding: 80px;"> 
                   <img src="images/random.jpg" class="rounded-circle mr-3" height="50px" width="50px" alt="avatar">
               <div class="card-body">
                 <h4 class="card-title"style="color: black">
-                  Website Content
+                  Website
                 </h4>
                 <h5 class="card-subtitle mb-2 text-muted">from ₹1000</h5>
-                <p class="card-text">Typically 450-500 words, an e-book is perfect for your target audience ranging from prospective customers to users</p>
+                <p class="card-text mb-2">Typically 450-500 words, an e-book is perfect for your target audience ranging from prospective customers to users</p>
                 <button class="w3-button w3-black" align:center style="color: rgb(32, 231, 188);background-color:white;border: 2px solid rgb(32, 231, 188);padding: 0px 10px">Order</button>
               </div>
               
@@ -162,28 +195,28 @@
           </div>
         
         <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card-body d-flex flex-row" style="padding: 80px;">
+            <div class="card-body" style="padding: 80px;">
                 <img src="images/random.jpg" class="rounded-circle mr-3" height="50px" width="50px" alt="avatar">
             <div class="card-body">
               <h4 class="card-title"style="color: black">
               Video Script
               </h4>
               <h5 class="card-subtitle mb-2 text-muted">from ₹1000</h5>
-              <p class="card-text">Typically 450-500 words, an e-book is perfect for your target audience ranging from prospective customers to users</p>
+              <p class="card-text mb-2">Typically 450-500 words, an e-book is perfect for your target audience ranging from prospective customers to users</p>
               <button class="w3-button w3-black" align:center style="color: rgb(32, 231, 188);background-color:white;border: 2px solid rgb(32, 231, 188);padding: 0px 10px">Order</button>
             </div>
   
           </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card-body d-flex flex-row" style="padding: 80px;">
+            <div class="card-body" style="padding: 80px;">
                 <img src="images/random.jpg" class="rounded-circle mr-3" height="50px" width="50px" alt="avatar">
             <div class="card-body">
               <h4 class="card-title"style="color: black">
-                Company Profile/Brochure
+                Company
               </h4>
               <h5 class="card-subtitle mb-2 text-muted">from ₹2000</h5>
-              <p class="card-text">Typically 450-500 words, an e-book is perfect for your target audience ranging from prospective customers to users</p>
+              <p class="card-text mb-2">Typically 450-500 words, an e-book is perfect for your target audience ranging from prospective customers to users</p>
               <button class="w3-button w3-black" align:center style="color: rgb(32, 231, 188);background-color:white;border: 2px solid rgb(32, 231, 188);padding: 0px 10px">Order</button>
             </div>
             </div>
@@ -200,19 +233,7 @@
   <!-- /.container fluid-->
   </div>
   <!-- /.container -->
- <div class="comments">
-    <ul class="social">
-        <button class="button button5" style="background-color: white">
-            <img class="rounded" src="images/download (2).png" title="Comments(8)" style="width:40px;height: 40px;margin: 0px 10px;">
-        </button>
-        <button class="button button5" style="background-color: white">
-          <img class="rounded" src="images/download (1).png" title="inspect" style="width:40px;height: 40px;margin: 0px 10px;">
-        </button>
-        <button class="button button5" style="background-color: white">
-            <img class="rounded" src="images/img_510929.png" title="Screens(1)" style="width:40px;height: 40px;margin: 0px 10px;">
-        </button>
-    </ul>
-  </div>
+ 
   
   <!-- Footer -->
   <footer class="py-5 bg-light">

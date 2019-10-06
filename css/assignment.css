@@ -3,12 +3,16 @@
  * Copyright 2013-2019 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-shop-homepage/blob/master/LICENSE)
  */
- 
+ nav.navbar.navbar-default {
+  min-height: 200px;
+}
+
  .jumbotron {
-  height:270px;
+  height:275px;
   padding:20px 20px;
   padding-left: 30px;
   padding-bottom: 40px;
+  padding-top: 20px; 
   margin-top:30px;
   margin-left: 80px;
   margin-right: 50px;
@@ -18,12 +22,67 @@
 .button5 {
   border-radius: 50%;
 }
+.button5 img {
+  transition: 0.3s;
+  text-decoration: none;
+  border-radius: 0 5px 5px 0;
+}
 
+.button5 img:hover {
+  right: 0; 
+}
+
+#back {
+  top: 450px;
+  background-color: #555
+    }
+    #back a {
+  position: absolute;
+  left: -80px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 100px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 0 5px 5px 0;
+}
+
+#back a:hover {
+  left: 0;
+}
+#backb {
+  top: 50%;
+  background-color: #555
+    }
+    #rback {
+      top: 450px;
+      background-color: #555
+        }
+#rback a {
+      position: absolute;
+      right: -70px;
+      transition: 0.3s;
+      padding: 15px;
+      width: 100px;
+      text-decoration: none;
+      font-size: 20px;
+      color: white;
+      border-radius: 0 5px 5px 0;
+}
+#rback a:hover {
+      right: 0;
+}
+#backr {
+      top: 50%;
+      background-color: #555
+}
+    
 
 .icon-bar {
   width: 20px;
   padding-left: 1px;
-  background-color:#f9f9f9;
+  /* background-color:#f9f9f9; */
 }
 
 .bottom-right {
@@ -40,9 +99,10 @@
   font-size: 20px;
 }
 
-/* .icon-bar a:hover {
-  background-color: #000;
-} */
+.icon-bar a:hover {
+  background-color: #002E66;
+  width: 60px;
+}
 
 body {
   padding-top: 56px;
@@ -70,10 +130,11 @@ a {
   vertical-align: middle;
   text-align: center;
   font-size: 30px;
-  .social {
+}
+  /* .social {
     padding-left: 0px;
-  }
-  li {
+  } */
+   li {
     display: inline-block;
     margin-left: 10px;
     margin-right: 10px;
@@ -92,12 +153,12 @@ a {
     margin-left: 30px;
     margin-bottom: 20px;
     transition: ease .3s;
-    &:hover {
+    /* &:hover {
       /* color: rgba(256, 256, 256, 1); */
-      border: 1px solid rgba(256, 256, 256, 1);
-    }
+      /* border: 1px solid rgba(256, 256, 256, 1); */
+     
   }
-}
+
 
 .social:hover > li {
   opacity: 0.5;
@@ -105,11 +166,6 @@ a {
 
 .social:hover > li:hover {
   opacity: 1;
-}
-.credits, .credits a {
-  font-size: 20px;
-  font-family: Open Sans;
-  color: rgba(256, 256, 256, 0.6);
 }
 
 .comments {
@@ -128,6 +184,9 @@ a {
   text-align: center;
 }
 
+.comments a:hover {
+  right: 0; 
+}
 .comments ul > li {
   margin-left: 1rem;
   margin-right: 1rem;
@@ -176,4 +235,34 @@ a {
   .comments ul > li > a:hover {
     background-color: #002E66;
   }
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  width: auto;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: white;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
